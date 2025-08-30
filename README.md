@@ -1,57 +1,77 @@
-Title
-Timed Quiz App (HTML, CSS, JavaScript)
 
-Description
-A lightweight multiple‑choice quiz built with HTML, CSS, and vanilla JavaScript featuring a per‑question 30‑second timer, instant correct/wrong feedback, auto‑advance on timeout, and a final score screen with retry.
+# Timed Quiz App (HTML, CSS, JavaScript)
 
-Demo
-Open index.html directly in a browser to run locally (no build step).
+## 📌 Description
+A lightweight multiple-choice quiz built with **HTML, CSS, and vanilla JavaScript** featuring a per-question 30-second timer, instant correct/wrong feedback, auto-advance on timeout, and a final score screen with retry.
 
-Features
-30‑second countdown per question with auto‑advance on timeout.
+## 🚀 Demo
+Open `index.html` directly in a browser to run locally (no build step required).
 
-Instant feedback: selected option gets correct/wrong styles.
+## ✨ Features
+- ⏱ **30-second countdown** per question with auto-advance on timeout.  
+- ✅ **Instant feedback**: selected option gets correct/wrong styles.  
+- 📊 **Final score screen** with retry option.  
+- 📱 **Responsive UI** using modern CSS.
 
-Final score screen with retry to restart the quiz.
+## 🛠 Tech Stack
+- **HTML**
+- **CSS**
+- **Vanilla JavaScript** (no frameworks, no backend)
 
-Simple, responsive UI using modern CSS.
+## 📂 Project Structure
+```
 
-Tech Stack
-HTML, CSS, Vanilla JavaScript (no frameworks, no backend).
+.
+├── index.html   # Markup and containers (timer, question, options, score)
+├── style.css    # Layout, buttons, and feedback styles (.correct / .wrong)
+└── script.js    # Quiz logic, DOM updates, timer, and score handling
 
-Project Structure
-index.html — markup and containers (timer, question, options, score).
+````
 
-style.css — layout, buttons, and feedback styles (.correct/.wrong).
+## ⚙️ How It Works
+1. Questions are defined in a JavaScript data structure.  
+2. A countdown starts for each question.  
+3. On answer or timeout, the state updates and the next question loads.  
+4. On completion, the **score screen** shows the tally.  
+5. A **retry button** resets state and timers.
 
-script.js — quiz logic, DOM updates, timer via setInterval/setTimeout, score handling.
+## 🏁 Getting Started
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-username/timed-quiz-app.git
+````
 
-How It Works
-Questions are defined in a JavaScript data structure and rendered one at a time.
+2. Open the project folder.
+3. Run the app by opening `index.html` in any modern browser.
+4. Click options to answer → watch the 30s timer → view final score → click Retry to play again.
 
-A countdown starts for each question; on answer or timeout, state updates and the next question loads.
+or click on https://harshit4847.github.io/quiz-app-vanilla-js/
 
-On completion, the score screen shows tally and a retry button resets state and timers.
+## 🛤 Roadmap
 
-Getting Started
-Clone the repository.
+* [ ] Save recent scores/leaderboard using **localStorage**.
+* [ ] Add **category & difficulty selection** with filtered question pools.
+* [ ] Disable buttons after selection and reveal correct answer before advancing.
 
-Open index.html in any modern browser.
+## 🤝 Contributing
 
-Click options to answer; watch the 30s timer; view final score; click Retry to play again.
+Contributions are welcome!
 
-Roadmap
-Save recent scores/leaderboard using localStorage.
+* Fork the repo
+* Create a feature branch
+* Open a Pull Request with a clear description (include screenshots/GIFs for UI changes if possible).
 
-Category and difficulty selection with filtered question pools.
+## 📜 License
 
-Disable buttons after selection; reveal correct answer before advancing.
+This project is open-source. Choose a license (e.g., **MIT**) and add it in a `LICENSE` file.
 
-Contributing
-Contributions are welcome: fork the repo, create a feature branch, and open a pull request with a clear description and screenshots/GIF if UI changes are involved.
+## 🙏 Acknowledgements
 
-License
-Choose and add a license (e.g., MIT) via a LICENSE file for clarity.
+Inspired by common timer-based quiz patterns and tutorials that emphasize countdowns, score tracking, and restart flows.
 
-Acknowledgements
-Inspired by common timer‑based quiz patterns and tutorials that emphasize countdowns, score tracking, and restart flows.
+```
+
+---
+
+Do you want me to also **add badges** (like MIT license, made with JS, etc.) at the top of the README for a more professional GitHub look?
+```
